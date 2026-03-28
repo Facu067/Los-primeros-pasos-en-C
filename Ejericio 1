@@ -1,0 +1,44 @@
+//Una empresa desea calcular el sueldo de un empleado e imprimir su recibo detallando:
+//⮚ Nombre y Apellido, Sueldo Básico, Premio, Comida, Viáticos, Ausentes, Obra
+//social (3%),
+//⮚ Ley 19032 (3%), y Jubilación (11%).
+//⮚ Por los ausentes, se descuenta un monto fijo por día de ausencia. Los
+//porcentajes se calculan sobre los montos remunerativos. Viáticos, premios y
+//comida no se consideran remunerativos.
+
+
+// Agrego librerias a usar
+
+#include <stdio.h>
+
+//Inicializo Variables a utilizar (globales)
+
+char Nombre[20];
+char Apellido[20];
+float SueldoBasico,Premio,Comida,Viaticos,Obrasocial,Ley19032,Jubilacion,Descxasencia;
+int Ausente,dia;                                                         //supongo que los ausentes son enteres, no existe medio ausente (llegada tarde)
+
+Ausente=1000
+
+//Comienza el programa
+
+int main () { 
+
+printf("Ingrese Nombre y Apellido del empleado",Nombre,Apellido);
+
+scanf("%c",&Nombre,"%c"&Apellido);
+
+
+
+
+
+
+
+
+return 0;
+
+}
+
+
+
+

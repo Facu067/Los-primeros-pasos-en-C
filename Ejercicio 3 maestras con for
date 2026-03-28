@@ -1,0 +1,50 @@
+#include <stdio.h>
+
+#define NUM_ALUMNOS 30
+#define NUM_MAESTRAS 3
+#define NUM_GRUPOS 6
+
+// Estructura para almacenar las calificaciones de una maestra por un grupo
+typedef struct {
+    int calificacion_maestra1;
+    int calificacion_maestra2;
+    int calificacion_maestra3;
+} Calificaciones;
+
+int main() {
+    Calificaciones grupos[NUM_GRUPOS];
+
+    // Solicitar las calificaciones de cada grupo
+    printf("Por favor, ingrese las calificaciones para cada maestra (entre 1 y 10):\n");
+    for (int i = 0; i < NUM_GRUPOS; i++) {
+        printf("Grupo %d:\n", i + 1);
+        printf("Calificación Maestra 1: ");
+        scanf("%d", &grupos[i].calificacion_maestra1);
+        printf("Calificación Maestra 2: ");
+        scanf("%d", &grupos[i].calificacion_maestra2);
+        printf("Calificación Maestra 3: ");
+        scanf("%d", &grupos[i].calificacion_maestra3);
+    }
+
+    // Calcular promedio de calificaciones para cada maestra
+    float promedio_maestra1 = 0, promedio_maestra2 = 0, promedio_maestra3 = 0;
+    for (int i = 0; i < NUM_GRUPOS; i++) {
+        promedio_maestra1 += grupos[i].calificacion_maestra1;
+        promedio_maestra2 += grupos[i].calificacion_maestra2;
+        promedio_maestra3 += grupos[i].calificacion_maestra3;
+    }
+    promedio_maestra1 /= NUM_GRUPOS;
+    promedio_maestra2 /= NUM_GRUPOS;
+    promedio_maestra3 /= NUM_GRUPOS;
+
+    // Mostrar los resultados
+    printf("\nInforme de calificaciones:\n");
+    printf("Maestra 1:\n");
+    printf("Promedio de calificaciones: %.2f\n", promedio_maestra1);
+    printf("\nMaestra 2:\n");
+    printf("Promedio de calificaciones: %.2f\n", promedio_maestra2);
+    printf("\nMaestra 3:\n");
+    printf("Promedio de calificaciones: %.2f\n", promedio_maestra3);
+
+    return 0;
+}

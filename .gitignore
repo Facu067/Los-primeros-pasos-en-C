@@ -1,0 +1,18 @@
+# Ejecutables
+*.exe
+
+# Archivos temporales
+*.o
+*.obj
+
+# Config de Windows
+desktop.ini
+
+# Carpetas de compilación
+output/
+
+# VS Code
+.vscode/
+
+# Otros
+*.log
