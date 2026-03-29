@@ -16,3 +16,4 @@ output/
 
 # Otros
 *.log
+.tmp.driveupload/
